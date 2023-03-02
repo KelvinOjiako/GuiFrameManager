@@ -5,10 +5,10 @@ from FrameManager.GuiFrameManager import GuiFrameManager
 
 def experimental_main(main_app):
     # Creates 4 Box container UI Elements that will be rendered on the main_app
-    welcome_container = Box(main_app)
-    testing_container = Box(main_app)
-    results_container = Box(main_app)
-    export_container = Box(main_app)
+    welcome_container = Box(main_app, width=200, height=350, border=3)
+    testing_container = Box(main_app,  width=200, height=350, border=10)
+    results_container = Box(main_app,  width=200, height=350, border=15)
+    export_container = Box(main_app,  width=300, height=350, border=3)
 
     # A text box is then added to all the various Box Containers
     box1text = Text(welcome_container, text="Welcome to the HomePage")
